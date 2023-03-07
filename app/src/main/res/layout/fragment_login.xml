@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.LoginFragment">
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black_500"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/first_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textSize="11sp"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/gray_500"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:cornerRadius="15dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/first_name"/>
+
+    <EditText
+        android:id="@+id/login_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textSize="11sp"
+        android:background="@color/gray_500"
+        android:fontFamily="@font/montserrat"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableEnd="@drawable/ic_visibility_off_"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:hint="@string/password"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="99dp"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:textColor="@color/white_500"
+        android:textSize="14sp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        app:cornerRadius="15dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
