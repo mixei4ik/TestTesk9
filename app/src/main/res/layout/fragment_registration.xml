@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/screen_title"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/montserrat"
@@ -24,7 +24,7 @@
 
     <EditText
         android:id="@+id/first_name_edit_text"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="35dp"
         android:textSize="11sp"
@@ -43,7 +43,7 @@
 
     <EditText
         android:id="@+id/last_name_edit_text"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="35dp"
         android:textSize="11sp"
@@ -60,7 +60,7 @@
 
     <EditText
         android:id="@+id/login_email_edit_text"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/gray_500"
         android:fontFamily="@font/montserrat"
@@ -78,7 +78,7 @@
 
     <Button
         android:id="@+id/sing_in_button"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginTop="35dp"
         android:text="@string/sign_in"
