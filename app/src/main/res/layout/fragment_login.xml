@@ -14,6 +14,7 @@
         android:layout_marginTop="153dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="@string/welcome_back"
         android:textColor="@color/black_500"
         android:textSize="26sp" />
@@ -31,6 +32,7 @@
         app:cornerRadius="15dp"
         android:layout_marginStart="43dp"
         android:layout_marginEnd="43dp"
+        android:padding="7dp"
         android:inputType="textEmailAddress"
         android:hint="@string/first_name"/>
 
@@ -44,6 +46,7 @@
         android:fontFamily="@font/montserrat"
         android:layout_gravity="center"
         android:gravity="center"
+        android:padding="7dp"
         android:drawableEnd="@drawable/ic_visibility_off_"
         android:layout_marginStart="43dp"
         android:layout_marginEnd="43dp"
