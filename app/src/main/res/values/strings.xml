@@ -14,4 +14,6 @@
     <string name="samsung_s10">Samsung S10</string>
     <string name="phones">Phones</string>
     <string name="image_product">image product</string>
+    <string name="add_button">add button</string>
+    <string name="_30_off">30% off</string>
 </resources>
