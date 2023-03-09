@@ -83,6 +83,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/sign_in"
         android:fontFamily="@font/montserrat"
+        android:backgroundTint="@color/purple_600"
         android:textAllCaps="false"
         android:textColor="@color/white_500"
         android:textSize="14sp"

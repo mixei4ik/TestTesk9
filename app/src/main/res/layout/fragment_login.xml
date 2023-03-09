@@ -61,6 +61,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/montserrat"
         android:textAllCaps="false"
+        android:backgroundTint="@color/purple_600"
         android:textColor="@color/white_500"
         android:textSize="14sp"
         android:layout_marginStart="43dp"
