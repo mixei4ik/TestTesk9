@@ -1,11 +1,11 @@
 package com.example.testtesk9.domain
 
-import com.example.testtesk9.domain.models.FlashSaleProduct
-import com.example.testtesk9.domain.models.LatestProduct
+import com.example.testtesk9.domain.models.FlashSaleProductModel
+import com.example.testtesk9.domain.models.LatestProductModel
 
 interface ShopRepository {
 
-    suspend fun getLatestProduct(): List<LatestProduct>
+    suspend fun getLatestProduct(): List<LatestProductModel>
 
-    suspend fun getFlashSaleProduct(): List<FlashSaleProduct>
+    suspend fun getFlashSaleProduct(): List<FlashSaleProductModel>
 }

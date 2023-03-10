@@ -1,7 +1,7 @@
 package com.example.testtesk9.domain
 
 import com.example.testtesk9.common.Resource
-import com.example.testtesk9.domain.models.LatestProduct
+import com.example.testtesk9.domain.models.LatestProductModel
 import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
@@ -10,7 +10,7 @@ class GetLatestProductUseCase @Inject constructor(
     private val repository: ShopRepository
 ) {
 
-    suspend fun getLatestProduct(): Resource<List<LatestProduct>> {
+    suspend fun getLatestProduct(): Resource<List<LatestProductModel>> {
         return try {
             val latestProduct = repository.getLatestProduct()
             Resource.Success(latestProduct)

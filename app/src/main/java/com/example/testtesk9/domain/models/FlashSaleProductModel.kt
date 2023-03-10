@@ -1,6 +1,6 @@
 package com.example.testtesk9.domain.models
 
-data class FlashSaleProduct(
+data class FlashSaleProductModel(
     val category: String,
     val name: String,
     val price: Double,

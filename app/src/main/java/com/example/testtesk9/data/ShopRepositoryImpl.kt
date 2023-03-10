@@ -1,19 +1,19 @@
 package com.example.testtesk9.data
 
 import com.example.testtesk9.domain.ShopRepository
-import com.example.testtesk9.domain.models.FlashSaleProduct
-import com.example.testtesk9.domain.models.LatestProduct
+import com.example.testtesk9.domain.models.FlashSaleProductModel
+import com.example.testtesk9.domain.models.LatestProductModel
 import javax.inject.Inject
 
 class ShopRepositoryImpl @Inject constructor(
     private val shopApi: ShopApiService
 ) : ShopRepository {
-    override suspend fun getLatestProduct(): List<LatestProduct> {
-        val latestList = mutableListOf<LatestProduct>()
+    override suspend fun getLatestProduct(): List<LatestProductModel> {
+        val latestList = mutableListOf<LatestProductModel>()
         shopApi.getListLatestProduct().latest
             .forEach {
                 latestList.add(
-                    LatestProduct(
+                    LatestProductModel(
                         category = it.category,
                         name = it.name,
                         price = it.price,
@@ -24,12 +24,12 @@ class ShopRepositoryImpl @Inject constructor(
         return latestList
     }
 
-    override suspend fun getFlashSaleProduct(): List<FlashSaleProduct> {
-        val flashSaleList = mutableListOf<FlashSaleProduct>()
+    override suspend fun getFlashSaleProduct(): List<FlashSaleProductModel> {
+        val flashSaleList = mutableListOf<FlashSaleProductModel>()
         shopApi.getFlashSaleProduct().flash_sale
             .forEach {
                 flashSaleList.add(
-                    FlashSaleProduct(
+                    FlashSaleProductModel(
                         category = it.category,
                         name = it.name,
                         price = it.price,

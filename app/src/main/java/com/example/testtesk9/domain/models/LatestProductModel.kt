@@ -1,6 +1,6 @@
 package com.example.testtesk9.domain.models
 
-data class LatestProduct(
+data class LatestProductModel(
     val category: String,
     val name: String,
     val price: Int,
