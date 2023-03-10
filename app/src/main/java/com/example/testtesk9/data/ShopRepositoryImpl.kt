@@ -1,6 +1,5 @@
 package com.example.testtesk9.data
 
-import com.example.testtesk9.data.models.LatestProductApi
 import com.example.testtesk9.domain.ShopRepository
 import com.example.testtesk9.domain.models.FlashSaleProduct
 import com.example.testtesk9.domain.models.LatestProduct
